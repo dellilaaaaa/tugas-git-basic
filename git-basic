@@ -1,0 +1,76 @@
+
+USER@ACER MINGW64 ~/Desktop/TUGASKU
+$ mkdir git-basic
+
+USER@ACER MINGW64 ~/Desktop/TUGASKU
+$ cd git-basic
+
+USER@ACER MINGW64 ~/Desktop/TUGASKU/git-basic
+$ git init
+Initialized empty Git repository in C:/Users/USER/Desktop/TUGASKU/git-basic/.git/
+
+USER@ACER MINGW64 ~/Desktop/TUGASKU/git-basic (master)
+$ touch first.txt
+
+USER@ACER MINGW64 ~/Desktop/TUGASKU/git-basic (master)
+$ git add first.txt
+
+
+USER@ACER MINGW64 ~/Desktop/TUGASKU/git-basic (master)
+$
+
+USER@ACER MINGW64 ~/Desktop/TUGASKU/git-basic (master)
+$ git commit -m "adding first.txt"
+[master (root-commit) b323d28] adding first.txt
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 first.txt
+
+USER@ACER MINGW64 ~/Desktop/TUGASKU/git-basic (master)
+$ git log
+commit b323d28965dc55267a6fa82c6810e8fe8cc47405 (HEAD -> master)
+Author: dellilaaaaa <dellilapellokila@gmail.com>
+Date:   Mon Sep 20 04:02:07 2021 -0700
+
+    adding first.txt
+
+USER@ACER MINGW64 ~/Desktop/TUGASKU/git-basic (master)
+$ touch second.txt
+
+USER@ACER MINGW64 ~/Desktop/TUGASKU/git-basic (master)
+$ git add second.txt
+
+USER@ACER MINGW64 ~/Desktop/TUGASKU/git-basic (master)
+$ git commit -m "adding second.txt"
+[master c22958f] adding second.txt
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 second.txt
+
+USER@ACER MINGW64 ~/Desktop/TUGASKU/git-basic (master)
+$ git rm first.txt
+rm 'first.txt'
+
+USER@ACER MINGW64 ~/Desktop/TUGASKU/git-basic (master)
+$ git commit -m"removing first.txt"
+[master d95c1fa] removing first.txt
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ delete mode 100644 first.txt
+
+USER@ACER MINGW64 ~/Desktop/TUGASKU/git-basic (master)
+$ git log
+commit d95c1fae668aa1de28dc09d27f2c1b2d25d75276 (HEAD -> master)
+Author: dellilaaaaa <dellilapellokila@gmail.com>
+Date:   Mon Sep 20 04:03:43 2021 -0700
+
+    removing first.txt
+
+commit c22958f1a3518246a4f5539ce9dd1b084cec2594
+Author: dellilaaaaa <dellilapellokila@gmail.com>
+Date:   Mon Sep 20 04:03:12 2021 -0700
+
+    adding second.txt
+
+commit b323d28965dc55267a6fa82c6810e8fe8cc47405
+Author: dellilaaaaa <dellilapellokila@gmail.com>
+Date:   Mon Sep 20 04:02:07 2021 -0700
+
+    adding first.txt
